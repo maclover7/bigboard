@@ -1,0 +1,32 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #FF9D00;
+$text-color: #FFFDA3;
+// ----------------------------------------------------------------------------
+// Widget-text styles
+// ----------------------------------------------------------------------------
+.widget-mta {
+ 
+  background-color: $background-color;
+ 
+  .line {
+    font-size: 270%;
+    color: $text-color;
+  }
+ 
+  .name {
+    font-size: 140%;
+    color: $text-color;
+  }
+ 
+  .direction {
+    font-size: 100%;
+    color: $text-color;
+  }
+ 
+  .time {
+    font-size: 200%;
+    color: $text-color;
+  }
+}
