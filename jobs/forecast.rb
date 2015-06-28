@@ -6,7 +6,7 @@ forecast_api_key = ENV["FORECAST_API_KEY"]
  
 # Latitude, Longitude for location
 forecast_location_lat = ENV["FORECAST_LATITUDE"]
-forecast_location_long = ENV["FOECAST_LONGITUDE"]
+forecast_location_long = ENV["FORECAST_LONGITUDE"]
  
 # Unit Format
 # "us" - U.S. Imperial
