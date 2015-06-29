@@ -22,7 +22,6 @@ class TrainStatus
       train_id, train_status = content.split("|")
       if train_id == train_number
         status = train_status
-        puts "#{status}"
       end
     end
 
