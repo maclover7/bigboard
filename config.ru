@@ -22,4 +22,12 @@ map Sinatra::Application.assets_prefix do
   run Sinatra::Application.sprockets
 end
 
+use Rack::Logger
+
+helpers do
+  def logger
+    request.logger
+  end
+end
+
 run Sinatra::Application
