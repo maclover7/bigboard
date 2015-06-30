@@ -36,8 +36,6 @@ SCHEDULER.every '24h', :first_in => 0 do |job|
   # Defaults to strict checking of required columns
   source = GTFS::Source.build('http://web.mta.info/developers/data/nyct/subway/google_transit.zip')
 
-  puts "Downloaded GTFS data from MTA"
-
   # Get stop_ids of our stops of interest (these are listed in the array target_stops)
   source.stops.each do |stop|
     if target_stops.include? stop.name
@@ -147,6 +145,4 @@ SCHEDULER.every DISPLAY, :first_in => '5s' do |job|
  
   send_event('mta', {line: line, name: name, direction: direction, time: time})
 
-  puts "MTA data pushed to web page"
- 
 end
